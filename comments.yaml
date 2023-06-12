@@ -27,6 +27,7 @@ kind: Service
 metadata:
   name: comments-clusterip-srv
 spec:
+  type: LoadBalancer
   selector:
     app: comments
   ports:
